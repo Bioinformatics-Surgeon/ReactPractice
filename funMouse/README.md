@@ -34,3 +34,8 @@
 ### JSX
 
 - We need to understand JSX
+
+### NPM
+
+- npx allows you to run one command instead of two
+  5.2 and higher have this command
