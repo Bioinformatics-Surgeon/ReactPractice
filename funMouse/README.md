@@ -30,3 +30,7 @@
   2. "ReactDOM" know how to take a componet and make it show up in the DOM
 
   - shows the code in HTML
+
+### JSX
+
+- We need to understand JSX
