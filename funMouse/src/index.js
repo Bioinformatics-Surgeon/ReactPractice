@@ -6,7 +6,13 @@ import './index.css';
 // create a react component
 
 const App = function() {
-  return <div>Hi there</div>;
+  return (
+    <div>
+      <label htmlFor="" />
+      <input type="text" name="" id="" />
+      <button type="submit" />
+    </div>
+  );
 };
 // take the react component and show it on the screen
 

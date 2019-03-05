@@ -38,6 +38,15 @@
 - Browsers don't understand JSX code but we use Babel to compile it down to ES5 JS that most all broswers can understand
 - Althought JSX is similar in form and function to HTML there are acouple differecens
 
+#### inline style:
+
+`<div style={{backgroundColor: 'red'}}>Some Text</div>`
+
+- inline styles can be applied by using an inline style objecy
+- key represent a different property you want to style and the property represent the value of the property
+- Cannot use "-" dashes must just camel case
+- spaces can be represented in the 'string string string'
+
 ### NPM
 
 - npx allows you to run one command instead of two
