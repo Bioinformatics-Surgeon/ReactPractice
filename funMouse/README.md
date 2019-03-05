@@ -34,6 +34,7 @@
 ### JSX
 
 - We need to understand JSX
+- JavaScript Xtensible Markup Language
 
 ### NPM
 
