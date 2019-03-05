@@ -40,3 +40,29 @@
 
 - npx allows you to run one command instead of two
   5.2 and higher have this command
+
+## Babel
+
+- tranaspiles higher level unsported JS to ES5 support JS
+
+## files and folders
+
+- scr: source file contains the components of the application
+- public: contains different static file that never change
+- node_module: all dependecies 1700+ in create-react-app
+- package.json: list all dependies and project configiration
+- package-lock.json: records the versions of all dependecies
+
+## import statement
+
+- bundler system called webpack
+- every file is its own little universe
+- if you want asscess to code you have to right an import statement
+- webpack thing
+
+### import React from 'react'
+
+> import (we want to get code from some other file or dependency)
+> React (the cariable we want to assign this import to )
+> from (we are about to specidfy the name of the library or file we are importing from)
+> 'react' (the name of the dependcy or path to the file we are importing)
