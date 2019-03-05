@@ -71,3 +71,15 @@
 
 1. CommonJS modules uses **require**
 2. ES2015 Modules uses **import**
+
+## React componet
+
+- they are functions or classes
+  both **produce** **HTML** to show user and **handles** **feedback** from **user**
+
+## ReactDOM
+
+- When we want to show the component that we want to render to the page we will need to call ReactDOM.render(1, 2)
+
+1. being what component you want to render
+2. being where you want to render it, in our case the div with the id of root
