@@ -33,8 +33,10 @@
 
 ### JSX
 
-- We need to understand JSX
 - JavaScript Xtensible Markup Language
+- A special dialect of JS (not HTML)
+- Browsers don't understand JSX code but we use Babel to compile it down to ES5 JS that most all broswers can understand
+- Althought JSX is similar in form and function to HTML there are acouple differecens
 
 ### NPM
 
@@ -43,7 +45,7 @@
 
 ## Babel
 
-- tranaspiles higher level unsported JS to ES5 support JS
+- complies higher level unsported JS to **ES5** support JS
 
 ## files and folders
 

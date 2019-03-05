@@ -1,6 +1,7 @@
 // import react and react-dom
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 
 // create a react component
 

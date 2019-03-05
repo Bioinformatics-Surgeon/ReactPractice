@@ -1,10 +1,5 @@
-div {
-  height: 100vh;
-  width: 100vw;
-}
-
-.panel {
-  position: absolute;
-  box-shadow: 0 0 50px grey;
-  background-image: url(https://res.cloudinary.com/moodyappcloudname/image/upload/v1550070660/michal-kubalczyk-505207-unsplash.jpg);
+html,
+body {
+  font-family: monospace;
+  font-size: 20px;
 }
