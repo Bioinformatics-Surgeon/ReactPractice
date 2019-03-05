@@ -63,6 +63,11 @@
 ### import React from 'react'
 
 > import (we want to get code from some other file or dependency)
-> React (the cariable we want to assign this import to )
+> React (the cariable we want to assign this import to ) this can be anything but by convention we call it this
 > from (we are about to specidfy the name of the library or file we are importing from)
-> 'react' (the name of the dependcy or path to the file we are importing)
+> 'react' (the name of the dependcy or path to the file we are importing) || or we can import by using a path name for a file
+
+- import and require are both module systems
+
+1. CommonJS modules uses **require**
+2. ES2015 Modules uses **import**
