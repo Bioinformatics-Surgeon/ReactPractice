@@ -10,33 +10,40 @@
 - ES2015 allows for React to use Classes
 
   - A componet is the fundamentals of React
-  - We can creat componets with funcitoins or classes
+  - We can creat componets with functions or classes
 
 - JSX (javascript xml)
 
-  - reacts own language that ressembles HTML
-  - special language of JS
+  - reacts own language that ressembles HTML but is not HTML
+    - special language of JS
 
-- Event Handles can be used in React
+- Event Handlelers can be used in React
 
-  - componet can handles envents as well
+  - components can handles envents as well
 
 - React is split into two separate libraries
 
-  1. "React" knows what a componet is and how to amke componets work together
+  _Modules_
+
+  1. "React" knows what a componet is and how to make components work together
 
   - contains the defintion of what components are
 
-  2. "ReactDOM" know how to take a componet and make it show up in the DOM
+  2. "ReactDOM" knows how to take a component and make it show up in the DOM
 
-  - shows the code in HTML
+  - shows the code in as HTML in browser
 
 ### JSX
 
 - JavaScript Xtensible Markup Language
 - A special dialect of JS (not HTML)
-- Browsers don't understand JSX code but we use Babel to compile it down to ES5 JS that most all broswers can understand
-- Althought JSX is similar in form and function to HTML there are acouple differecens
+- Browsers don't understand JSX code but we use Babel to compile it down to _ES5 JS_ that most all browsers can understand
+- Althought JSX is similar in form and function to HTML there are a couple differecens
+
+_community convention alert!_
+
+- single quotes: non-JSX property like a inline-style property
+- double quotes: anytime you want to indicate a string
 
 #### inline style:
 
@@ -54,7 +61,7 @@
 
 ## Babel
 
-- complies higher level unsported JS to **ES5** support JS
+- compiles higher level unsported JS to **ES5** supported JS
 
 ## files and folders
 
@@ -86,7 +93,9 @@
 ## React componet
 
 - they are functions or classes
-  both **produce** **HTML** to show user and **handles** **feedback** from **user**
+- "class" is really just a constructor funciton
+  - new makes a new object
+    both **produce** **HTML** to show user and **handles** **feedback** from **user**
 
 ## ReactDOM
 

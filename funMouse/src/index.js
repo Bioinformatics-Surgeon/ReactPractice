@@ -5,12 +5,22 @@ import './index.css';
 
 // create a react component
 
+function getButtonText() {
+  return 'Click on Me!';
+}
+
 const App = function() {
   return (
     <div>
-      <label htmlFor="" />
+      <label className="label" htmlFor="">
+        {' '}
+        Enter Name
+      </label>
+
       <input type="text" name="" id="" />
-      <button type="submit" />
+      <button type="submit" className="btn btn-primary">
+        {getButtonText()}
+      </button>
     </div>
   );
 };
