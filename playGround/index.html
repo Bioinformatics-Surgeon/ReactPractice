@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <script
+    src="http://widget.cloudinary.com/v2.0/global/all.js"
+    type="text/javascript"
+  ></script>
+  <body>
+    <button onclick="getLocation()">Geolocation</button>
+
+    <button id="upload_widget" class="cloudinary-button">Upload files</button>
+
+    <script type="text/javascript">
+      // let myWidget = cloudinary.createUploadWidget(
+      //   {
+      //     cloudName: 'moodyappcloudname',
+      //     uploadPreset: 'myUploadPresent'
+      //   },
+      //   (error, result) => {
+      //     console.log(error, result);
+      //   }
+      // );
+
+      document
+        .getElementById('upload_widget')
+        .addEventListener('click', function() {
+          const myUploadWidget = cloudinary.openUploadWidget(
+            {
+              cloudName: 'moodyappcloudname',
+              uploadPreset: 'c7sguyqu',
+              defaultSource: 'camera'
+            },
+            (error, result) => {
+              const uploadedImage = result.info.secure_url;
+              if (result.event === 'success') {
+                $('#userPic')
+                  .html(
+                    `<img src="${uploadedImage}" alt="Uploaded Image" style="width:100%;">`
+                  )
+                  .addClass('uploadedImage');
+
+                // Get emotions from Face++
+                faceAPI(uploadedImage);
+
+                // close widget
+                myUploadWidget.close({ quiet: true });
+              }
+            },
+            false
+          );
+        });
+
+      let x = document.getElementById('demo');
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          x.innerHTML = 'Geolocation is not supported by this browser.';
+        }
+      }
+
+      function showPosition(position) {
+        x.innerHTML =
+          'Latitude: ' +
+          position.coords.latitude +
+          '<br>Longitude: ' +
+          position.coords.longitude;
+      }
+    </script>
+  </body>
+</html>
